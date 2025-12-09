@@ -1,0 +1,22 @@
+artifact_path: /Users/jlaubert/devspace/ia-simplon/m4b1-regression/mlruns/0/models/m-9df33634d5bd435abe1f9b28e3a22d8f/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.7.0
+model_id: m-9df33634d5bd435abe1f9b28e3a22d8f
+model_size_bytes: 3274261
+model_uuid: m-9df33634d5bd435abe1f9b28e3a22d8f
+prompts: null
+run_id: 130bc877f2754ce4ae422bdb6b645118
+utc_time_created: '2025-12-09 14:07:28.686808'

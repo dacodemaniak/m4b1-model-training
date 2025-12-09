@@ -1,0 +1,45 @@
+# pyproject.toml
+[project]
+name = "boston-realestate-price-regression"
+version = "0.0.1"
+description = "Realestate price estimation regression model"
+requires-python = ">=3.13"
+dependencies = [
+    "jupyter>=1.0.0",
+    "ipykernel>=6.0.0",
+    "numpy>=1.21.0",
+    "pandas>=1.3.0",
+    "matplotlib>=3.5.0",
+    "seaborn>=0.11.0",
+    "loguru",
+    "mlflow",
+    "lightgbm"
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyterlab>=3.0.0",      # Interface avancée
+    "jupyterlab-widgets",     # Pour ipywidgets
+    "ipywidgets>=7.0.0",      # Widgets interactifs
+    "debugpy",                # Débogage
+    "black",                  # Formattage
+    "isort",                  # Tri des imports
+]
+viz = [
+    "plotly>=5.0.0",
+    "bokeh>=2.4.0",
+    "altair>=4.2.0",
+]
+ml = [
+    "scikit-learn>=1.0.0",
+    "scipy>=1.7.0",
+    "xgboost>=1.5.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# Configuration optionnelle pour Jupyter
+[tool.jupyter]
+kernelspec = "regression"
